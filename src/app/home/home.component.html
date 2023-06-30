@@ -1,0 +1,9 @@
+<div *ngIf="!loginDisplay; else logged">
+    <p>Por favor inicie sesión para ver la información de perfil.</p>
+</div>
+<ng-template #logged>
+    <strong><p>¡Logueado correctamente!</p></strong>
+    <p>
+        <span>Puede revisar su información de perfil.</span>
+    </p>
+</ng-template>
